@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myqrcode {
+  max-width: 360px;
+  box-shadow: 0 3px 10px grey;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myImage {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.myp1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.myp2 {
+  color: hsl(212, 5%, 53%);
+}
+/* Attribution
+.attribution {
+  align-self: center;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}*/
