@@ -1,0 +1,89 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+image,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: hsl(215, 51%, 70%);
+  font-family: Outfit, sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.flex-group {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0px 20px 20px 10px hsla(218, 61%, 7%, 0.438);
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+
+
+.nft-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.nft-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.nft-description {
+  font-size: 1rem;
+}
+
+.nft-amount {
+  color: hsl(178, 100%, 50%);
+}
+
+.divider-line {
+  border-width: 0;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.nft-details-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-creator-image {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 25rem;
+}
+
+.nft-creator-name {
+  color: hsl(0, 0%, 100%);
+}
