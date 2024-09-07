@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+image {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+body {
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(00, 0%, 8%);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 12%);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.profile-picture {
+  width: 75px;
+  margin-inline: auto;
+  border-radius: 25rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.lcoation {
+  color: hsl(75, 94%, 57%);
+}
+
+.aboutMe {
+  font-weight: 400;
+}
+
+.button-links {
+  text-align: center;
+  background-color: hsl(0, 0%, 20%);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.button-links:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
+.button-links:hover button {
+  color: hsl(00, 0%, 8%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
