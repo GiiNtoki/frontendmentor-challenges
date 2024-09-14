@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  all: unset;
+}
+button:focus {
+  outline: revert;
+}
+
+body {
+  font-family: "Figtree";
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border: 2px solid black;
+  box-shadow: 10px 10px black;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: aliceblue;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.section1 img {
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.learning {
+  margin-bottom: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 700;
+}
+
+.learning:hover {
+  background-color: black;
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.publish-date {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.lesson-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.lesson-title:hover {
+  cursor: pointer;
+  color: hsl(47, 88%, 63%);
+  text-shadow: 1px 1px black;
+}
+
+.lesson-description {
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 42%);
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section3 img {
+  width: 2.5rem;
+}
+
+.section3 img:hover {
+  border-radius: 100vmax;
+  cursor: pointer;
+  border: hsl(47, 88%, 63%);
+  box-shadow: 0 0 0 3px black;
+}
+
+.publisher {
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
