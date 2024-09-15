@@ -54,8 +54,8 @@ body {
 
 main {
   border: 2px solid black;
-  box-shadow: 10px 10px black;
-  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem black;
+  border-radius: 1.5rem;
   padding: 1rem;
   background-color: aliceblue;
   max-width: 360px;
@@ -70,7 +70,7 @@ main {
 
 .section1 img {
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 0.75rem;
 }
 
 .learning {
@@ -133,6 +133,5 @@ main {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.attribution a {color: hsl(228, 45%, 44%);
 }
