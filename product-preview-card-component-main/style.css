@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  color: hsl(212, 21%, 14%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  line-height: 1.5rem;
+}
+
+.content {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  margin-inline: 1rem;
+}
+
+@media (max-width: 375px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+}
+
+.perfume-image {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+@media (max-width: 375px) {
+  .perfume-image {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: none;
+    background-size: cover;
+  }
+}
+.perfume-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.perfume-name {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.Perfume,
+.perfume-description,
+.old-price {
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+}
+
+.poerfume-price {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.current-price {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  align-self: center;
+  justify-self: flex-end;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  padding: 1rem;
+  background-color: hsl(158, 36%, 37%);
+}
+
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: hsl(156, 42%, 18%);
+}
+
+.button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
