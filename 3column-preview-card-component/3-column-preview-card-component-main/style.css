@@ -31,7 +31,7 @@ img {
   --clr-cyan: hsl(184, 100%, 22%);
   --clr-drk-cyan: hsl(179, 100%, 13%);
 
-  --br-sharp: 0.7rem;
+  --br-sharp: 0.5rem;
   --br-circle: 100px;
 
   --min-hgt: 375px;
@@ -52,6 +52,7 @@ body {
 h2 {
   font-family: var(--ff-h);
   font-size: var(--fs-h);
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -59,7 +60,7 @@ a {
   text-decoration: none;
   text-wrap: nowrap;
   display: inline-block;
-  max-width: max-content;
+  max-width: max-content; /*to prevent the button from stretching*/
 }
 
 p {
