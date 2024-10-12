@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --ff-p: "Lexend Deca", sans-serif;
+  --ff-h: "Big Shoulders Display", sans-serif;
+  --ff-btn: "Lexend Deca", sans-serif;
+
+  --fs-h: 3rem;
+  --fs-p: 0.9375rem;
+
+  --fw-r: 400;
+  --fw-m: 500;
+  --fw-b: 700;
+
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-lght-gray: hsl(0, 0%, 95%);
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-drk-cyan: hsl(179, 100%, 13%);
+
+  --br-sharp: 0.7rem;
+  --br-circle: 100px;
+
+  --min-hgt: 375px;
+  --min-wdt: 375px;
+  --max-wdt: 1440px;
+}
+
+body {
+  background-color: var(--clr-lght-gray);
+  color: var(--clr-transparent-white);
+  font-family: var(--ff-p);
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: var(--ff-h);
+  font-size: var(--fs-h);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  text-wrap: nowrap;
+  display: inline-block;
+  max-width: max-content;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  border-radius: var(--br-sharp);
+  margin: 0.5rem 0.5em;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: var(--br-circle);
+  font-family: var(--ff-btn);
+  font-weight: var(--fw-m);
+  padding: 1em 2em;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.button:is(:hover, :focus) {
+  opacity: 0.85;
+}
+
+.sedan .button {
+  color: var(--clr-orange);
+}
+
+.suv .button {
+  color: var(--clr-cyan);
+}
+
+.luxury .button {
+  color: var(--clr-drk-cyan);
+}
+
+.sedan {
+  background-color: var(--clr-orange);
+}
+
+.suv {
+  background-color: var(--clr-cyan);
+}
+
+.luxury {
+  background-color: var(--clr-drk-cyan);
+}
+
+.wrapper {
+  padding: 3rem 3rem;
+  max-width: 370px;
+  display: grid;
+  justify-content: baseline;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    place-content: center;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
