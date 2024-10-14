@@ -120,7 +120,7 @@ body {
   color: aliceblue;
   font-size: var(--fs-500);
   font-weight: var(--fw-m);
-  margin: 1.5em;
+  margin: 1.5em 0;
   padding: 1em 2em;
 }
 
