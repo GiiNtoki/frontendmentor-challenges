@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+:root {
+  --ff: "Red Hat Display", sans-serif;
+
+  --fs-400: 1rem;
+  --fs-500: 1.15rem;
+  --fs-600: 1.5rem;
+
+  --fw-n: 500;
+  --fw-m: 700;
+  --fw-b: 900;
+
+  --clr-primary-pale-blue: hsl(225, 100%, 94%);
+  --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+  --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+  --clr-neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+  --br-s: 0.5rem;
+  --br-m: 1rem;
+  --br-l: 1.5rem;
+
+  --bs-card: 0 10px 20px hsla(224, 23%, 55%, 0.25);
+  --bs-cta: 0 10px 20px hsla(245, 75%, 52%, 0.25);
+}
+
+body {
+  background-color: var(--clr-primary-pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  font-family: var(--ff);
+  font-size: var(--fs-400);
+  height: 100vh;
+  line-height: 1.5;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
+
+.card {
+  border-radius: var(--br-l);
+  box-shadow: var(--bs-card);
+  max-width: 400px;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.details-wrapper {
+  background-color: #fff;
+  padding: 1em;
+}
+
+.order-title {
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--fw-b);
+  margin: 1em 0;
+}
+
+.plan-details {
+  background-color: var(--clr-neutral-pale-blue);
+  border-radius: var(--br-m);
+  margin-top: 2em;
+  padding: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-container {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.plan-title {
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--fw-b);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+}
+
+.change-plan {
+  color: var(--clr-primary-bright-blue);
+  font-weight: var(--fw-m);
+  text-decoration: underline;
+}
+
+.proceed-payment {
+  background-color: var(--clr-primary-bright-blue);
+  border-radius: var(--br-m);
+  box-shadow: var(--bs-cta);
+  color: aliceblue;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-m);
+  margin: 1.5em;
+  padding: 1em 2em;
+}
+
+.cancel-order {
+  color: var(--clr-neutral-desaturated-blue);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-m);
+  margin-bottom: 1.5em;
+}
+
+.cta:is(:hover, :focus) {
+  opacity: 0.85;
+}
